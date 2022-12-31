@@ -1,7 +1,7 @@
 import openai
 
 # Insira a sua chave de API aqui
-openai.api_key = "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"
+openai.api_key = "chave api key"
 
 # Defina o modelo do GPT-3 que você quer usar
 model_engine = "text-davinci-002"
