@@ -1,0 +1,16 @@
+import openai
+
+# Insira a sua chave de API aqui
+openai.api_key = "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"
+
+# Defina o modelo do GPT-3 que você quer usar
+model_engine = "text-davinci-002"
+
+# Defina o prompt (a pergunta ou mensagem de entrada)
+prompt = "Oi, eu sou o seu chatbot. Qual é o seu nome?"
+
+# Envie a solicitação para o GPT-3
+completion = openai.Completion.create(engine=model_engine, prompt=prompt, max_tokens=1024, n=1,stop=None,temperature=0.5)
+
+# Imprima a resposta do GPT-3
+print(completion.choices[0].text)
