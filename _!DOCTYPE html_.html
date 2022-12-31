@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minha página HTML com transição para Python</title>
+  </head>
+  <body>
+    <h1>Olá, mundo!</h1>
+    <p>Este é um parágrafo em minha página HTML.</p>
+    <script src="https://pyodide-cdn2.iodide.io/v0.15.0/full/pyodide.js"></script>
+    <script>
+      pyodide.loadPackage('numpy').then(() => {
+        console.log(numpy.random.rand(3, 3))
+      })
+    </script>
+  </body>
+</html>
