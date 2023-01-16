@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE>
+<html lang="en">
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    function translatePage() {
+      var targetLanguage = "pt";
+      apiKey: " chave api ",
+      var texts = document.querySelectorAll("body *");
+      texts.forEach(function(text) {
+        var textToTranslate = text.textContent;
+        $.ajax({
+          url: "https://translation.googleapis.com/language/translate/v2",
+          type: "POST",
+          data: {
+            q: textToTranslate,
+            target: targetLanguage,
+            key: apiKey
+          },
+          success: function(data) {
+            var translatedText = data.data.translations[0].translatedText;
+            text.textContent = translatedText;
+          }
+        });
+      });
+    }
+  </script>
+
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <style>
+        h1{
+            font-family: Arial;
+            font-size: 30pt;
+            color: blue;
+            text-shadow:2px 2px 2px red;
+        }
+    </style>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+
+</head>
+<body>
+
+  <a href="https://chat.openai.com/chat/" style="position:fixed; bottom:0; right:0;">Clique aqui para conversar</a>
+
+  <div style="position:fixed; bottom:0; right:0;">
+    <a href="https://chat.openai.com/chat/">chat</a>
+    <br>
+    <a href="https://chat.openai.com/chat/">Clique aqui para conversar</a>
+  </div>
+  
+    <div style="float: right">
+        <a href="login.html">Login</a>
+      </div>
+      
+<?php
+    header('Content-Type: text/html; charset=utf-8');
+    echo ' ';
+?>
+
+    <div id="interface">
+        <header id="cabeçalho">
+    <hgroup>
+    <h1>Sergio Batista</h1>
+    </hgroup>
+
+    <div>
+      <img class="minha class1" id="meuid1" src="avatar.png" alt="imagem"/>
+      <button &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; class ="speak">Clique aqui</button>
+
+      <script>
+          var button = document.querySelector('.speak');
+          var speech = new SpeechSynthesisUtterance();
+          speech.text = 'Olá, tudo bem!';
+      
+          button.addEventListener('click', function(){
+              speechSynthesis.speak(speech);
+          });
+      </script>
+      
+    </div>
+
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Portfólio</title>
+    <style>
+        h1{
+            font-family: Arial;
+            font-size: 30pt;
+            color: blue;
+          
+    </style>
+</head>
+
+<body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <script>
+      function onSignIn(googleUser) {
+        // Obtenha informações do usuário
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // ID do usuário do Google
+        console.log('Nome: ' + profile.getName());
+        console.log('Imagem: ' + profile.getImageUrl());
+        console.log('E-mail: ' + profile.getEmail()); // E-mail do usuário
+      }
+    </script>
+  </body>
+
+<body>
+    <div id="interface">
+        <header id="cabeçalho">
+    
+    </header>
+
+<audio id="alpha-waves" src="https://www.youtube.com/watch?v=g_VmSBCvq2U&list=RDQMNe1vAF1m7l0&start_radio=1" loop></audio>
+
+    <script>
+        
+        var audio = document.getElementById("alpha-waves");
+        window.onload = function() {
+            audio.play();
+        }
+    </script>
+
+
+
+ Quêm sou
+<p>Sou uma pessoa apaixonada por aprender e crescer constantemente. Gosto de estar sempre envolvido em projetos que me desafiam e me permitem desenvolver minhas habilidades. Acredito que a vida é uma jornada de descoberta e estou sempre buscando novas oportunidades para me desenvolver pessoal e profissionalmente. Além disso, valorizo muito as relações humanas e gosto de estar rodeado de pessoas positivas e inspiradoras. Acima de tudo, sou grato por todas as experiências e lições que a vida tem me proporcionado até agora e ansiosa por ver o que o futuro reserva.<p>
+
+</div>
+</body>
+</html>
+
+</header>
+
+<hgroup>
+<h1>Saiba mais</h1>
+<p>Você pode saber mais sobre mim,clicando nas opções.<p>
+<h3><a href="https://github.com/Sergio438">Tecnologia</a>&nbsp;&nbsp;&nbsp;&nbsp><&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/groups/1135844903776685">Inovações</a></h3>
+    <h2></h2>
+    <h3> </h3>
+</hgroup>
+
+<ol>
+  <li><a href="https://batistapwx.blogspot.com/">Home</a></li>
+  <li>Muitimidia</li>
+    <ol>
+      <li><a href="https://www.facebook.com/B.92317121">Facebook</a></li>
+      <li><a href="https://www.youtube.com/channel/UC8yrm7Thk9AIqHbxB7PplHA">Canal do YouTube 1</a></li>
+      <li><a href="https://www.youtube.com/channel/UCUmI-q3q-cP-eNds8keLD_Q">Canal do YouTube 2</a></li>
+    </ol>
+</ol>
+
+</div>
+</body>
+</html>
